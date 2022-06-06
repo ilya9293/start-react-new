@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-function FriendList(props) {
+function FriendList({ friends }) {
   return (
-    <ul class="friend-list">
-      {props.map(({ avatar, name, isOnline }) => (
-        <li class="item">
-          <span class="status"></span>
-          <img class="avatar" src={avatar} alt="User avatar" width="48" />
-          <p class="name">{name}</p>
+    <ul className="friend-list">
+      {friends.map(({ avatar, name, isOnline, id }) => (
+        <li className="item" key={id}>
+          <span className="status"></span>
+          <img className="avatar" src={avatar} alt="User avatar" width="48" />
+          <p className="name">{name}</p>
         </li>
       ))}
     </ul>
