@@ -1,0 +1,19 @@
+.transactionHistory {
+  margin: 15px auto 0;
+  width: 900px;
+}
+
+th {
+  padding: 15px;
+  background-color: rgb(69, 143, 143);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+tr:nth-child(2n + 1) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(2n) {
+  background-color: #f0e2e2;
+}
